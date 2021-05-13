@@ -3,6 +3,7 @@
     --grey: rgba(53, 55, 63, 55);
     --white:rgba(237, 237, 246, 238);
     --oceanblue: rgba(115, 124, 146, 124);
+    --darkgrey: rgba(60, 65, 72, 64);
 }
 
 * {
@@ -12,7 +13,7 @@
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-weight: normal;
 }
 
@@ -22,6 +23,7 @@ body {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     background-color: var(--grey);
     width: 100%;
     padding: 15px 0 15px 0;
@@ -77,7 +79,7 @@ h2 {
 }
 
 main {
-    margin: 35px 6.5% 55% 0;
+    margin: 35px 6.5% 0 0;
 }
 
 section {
@@ -103,15 +105,59 @@ article, section ul {
     width: 70.2%;
 }
 
-p {
+.aboutme {
     font-size: 13px;
     line-height: 1.5;
     margin-bottom: 20px;
 }
 
-.work {
-    flex: 1 0 450px;
+.work{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.workcards {
+    display: flex;
+    flex: 1 0 48%;
+    height: 150px;
+    margin: 7.5px;
+    text-decoration: none;
+    align-items: flex-end;
+    color: var(--darkgrey);
     border: 5px solid var(--tiffanygreen);
+    padding-bottom: 20px;
+}
+
+.workcards div {
+    padding: 10px 10px 10px 10px;
+    background-color: var(--tiffanygreen);
+}
+
+h4 {
+    font-size: 19px;
+}
+
+.workcards p {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.imgsurf {
+    flex: 2 1 100%;
+    height: 400px;
+    background-image: url("../images/surf.jpg");
+    background-size: 100% auto;
+}
+
+.imgled {
+    background-image: url("../images/led.jpg");
+    background-size: 100% auto;
+}
+
+.imgcalc {
+    background-image: url("../images/calc.jpg");
+    background-size: 100% auto;
 }
 
 section ul {
@@ -128,4 +174,8 @@ section ul li a {
     color: var(--oceanblue);
     padding: 10px;
     border-bottom: 3px solid var(--oceanblue);
+}
+
+footer {
+    height: 55px;
 }
