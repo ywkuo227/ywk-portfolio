@@ -53,7 +53,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 17px;
     color: var(--tiffanygreen);
-    padding: 10px;
+    padding: 5px;
     margin: 5px;
     border-bottom: 3px solid var(--tiffanygreen);
 }
@@ -84,16 +84,17 @@ main {
 
 section {
     display: flex;
-    box-sizing: border-box;
-    justify-content: center;
+    justify-content: flex-start;
     color: var(--oceanblue);
     margin: 22.5px 0 22.5px 0;
 }
 
 h3 {
+    display: flex;
     float: left;
     font-size: 40px;
-    text-align: right;
+    align-items: flex-end;
+    flex-direction: column;
     width: 23.3%;
     padding-right: 18px;
     border-right: 4px solid var(--oceanblue);
@@ -110,6 +111,11 @@ article, section ul {
     line-height: 1.5;
     margin-bottom: 20px;
 }
+.aboutme img {
+    height: 100px;
+    float: left;
+    margin: 0 10px 10px 0;
+}
 
 .work{
     display: flex;
@@ -119,7 +125,7 @@ article, section ul {
 
 .workcards {
     display: flex;
-    flex: 1 0 48%;
+    flex: 1 0 47.5%;
     height: 150px;
     margin: 7.5px;
     text-decoration: none;
@@ -132,6 +138,7 @@ article, section ul {
 .workcards div {
     padding: 10px 10px 10px 10px;
     background-color: var(--tiffanygreen);
+    opacity: 1;
 }
 
 h4 {
@@ -147,23 +154,37 @@ h4 {
     flex: 2 1 100%;
     height: 400px;
     background-image: url("../images/surf.jpg");
-    background-size: 100% auto;
 }
 
 .imgled {
     background-image: url("../images/led.jpg");
-    background-size: 100% auto;
 }
 
 .imgcalc {
     background-image: url("../images/calc.jpg");
+}
+
+.imgpuzzle {
+    background-image: url("../images/puzzle.jpg");
+}
+
+.imgrunbuddy {
+    background-image: url("../images/runbuddy.jpg");
+}
+
+.imgsurf, .imgled, .imgcalc, .imgpuzzle, .imgrunbuddy {
     background-size: 100% auto;
+    opacity: 0.75;
+}
+
+.imgsurf:hover, .imgled:hover, .imgcalc:hover, .imgpuzzle:hover, .imgrunbuddy:hover {
+    opacity: 1;
 }
 
 section ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -172,10 +193,92 @@ section ul li a {
     text-decoration: none;
     font-size: 17px;
     color: var(--oceanblue);
-    padding: 10px;
+    padding: 5px;
     border-bottom: 3px solid var(--oceanblue);
 }
 
 footer {
     height: 55px;
+}
+
+@media screen and (max-width: 992px) {
+
+    header {
+        padding: 0;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    h1 {
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        padding: 5px 0 5px 0;
+    }
+    
+    nav {
+        padding: 5px 0 5px 0;
+    }
+
+    .hero {
+        padding-right: 0;
+        padding-bottom: 8px;
+        justify-content: center;
+    }
+
+    main {
+        margin: 0 35px 0 35px;
+    }
+
+    section {
+        margin: 40px 0 40px 0;
+        flex-direction: column;
+    }
+
+    h3 {
+        float: none;
+        font-size: 40px;
+        text-align: left;
+        flex-direction: row;
+        width: 100%;
+        padding-right: none;
+        padding-bottom: 15px;
+        border-right: none;
+        border-bottom: 4px solid var(--oceanblue);
+    }
+    
+    h3 span {
+        margin-right: 9px;
+    }
+
+    article, .work, section ul {
+        float: none;
+        padding-left: 0;
+        padding-top: 25px;
+        width: 100%;
+    }
+    
+    .work {
+        padding: 15px 10px 15px 10px;
+    }
+
+    .workcards {
+        flex: 1 0 100%;
+        height: 175px;
+    }
+
+    .imgsurf {
+        flex: 1 0 100%;
+        height: 175px;
+    }
+
+    section ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    section ul li {
+        margin-bottom: 5px;
+    }
+
 }
