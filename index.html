@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Reset Browser Style. -->
     <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- Custom page sytle. -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Welcome to William's Portfolio</title>
 </head>
 <body>
+    <!-- Header and navigation bar. -->
     <header>
         <h1>Yu-Wei William Kuo</h1>
         <nav>
@@ -22,20 +25,25 @@
                 <li>
                     <a href="#contact-me">Contact Me</a>
                 </li>
+                <!-- No resume yet. Placeholder. -->
                 <li>
                     <a href="#resume">Resume</a>
                 </li>
             </ul>
         </nav>
     </header>
+    <!-- Hero image. -->
     <div class="hero">
         <h2>Cool subtitle here!</h2>
     </div>
+    <!-- Main content of the page. -->
     <main>
+        <!-- About Me section. -->
         <section id="about-me">
             <h3><span>About</span><span> Me</span></h3>
             <article>
                 <p class="aboutme">
+                    <!-- Added image of myself to the begining of the section. -->
                     <img src="./assets/images/me.jpg" alt="Image of myself">
                     Helvetica put a brid on it church-key Blue Bottle banjo bespoke brunch Etsy authentic Marfa quinoa typewriter plaid direct trade small batch wayfarers bicycle rights cliche craft beer gastropub single-origin coffee Godard Carles you probably haven't heard of them irony pickled kitsch synth sriracha gentrify literally heirloom blog Truffaut paleo scenester
                 </p>
@@ -44,6 +52,8 @@
                 </p>
             </article>
         </section>
+        <!-- Work Portfolio section. -->
+        <!-- Bug: Opacity being applied to the entire card. Need to investigate other options or to rewrite the entire section to apply opacity to only the background images. -->
         <section id="work">
             <h3>Work</h3>
             <article class="work">
@@ -65,9 +75,9 @@
                         <p>React / JavaScript / CSS</p>
                     </div>
                 </a>
-                <a href="#pastel-puzzels" class="workcards imgpuzzle">
+                <a href="#pastel-puzzles" class="workcards imgpuzzle">
                     <div>
-                        <h4>Pastel Puzzels</h4>
+                        <h4>Pastel Puzzles</h4>
                         <p>MERN Stack</p>
                     </div>
                 </a>
@@ -79,17 +89,20 @@
                 </a>
             </article>
         </section>
+        <!-- Contact methods. -->
         <section id="contact-me">
             <h3><span>Contact</span><span>Me</span></h3>
             <ul>
                 <li><a href="tel:+14255039206">425.503.9206</a></li>
                 <li><a href="mailto:ywkuo@outlook.com">ywkuo@outlook.com</a></li>
                 <li><a href="https://github.com/ywkuo227">GitHub</a></li>
+                <!-- Do not have the following. Placeholder for the time being. -->
                 <li><a href="">Twitter</a></li>
                 <li><a href="">Spotify</a></li>
             </ul>
         </section>
     </main>
+    <!-- Footer with a space to apply height and mimic bottom padding. -->
     <footer> </footer>
 </body>
 </html>
