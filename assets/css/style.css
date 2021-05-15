@@ -79,7 +79,7 @@ h2 {
 }
 
 main {
-    margin: 35px 6.5% 0 0;
+    margin-top: 35px;
 }
 
 section {
@@ -174,7 +174,7 @@ h4 {
 
 .imgsurf, .imgled, .imgcalc, .imgpuzzle, .imgrunbuddy {
     background-size: 100% auto;
-    opacity: 0.75;
+    opacity: 0.8;
 }
 
 .imgsurf:hover, .imgled:hover, .imgcalc:hover, .imgpuzzle:hover, .imgrunbuddy:hover {
