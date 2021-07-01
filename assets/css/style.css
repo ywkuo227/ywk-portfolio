@@ -136,6 +136,7 @@ article, section ul {
 }
 
 /* Work portfolio cards. */
+/* Set background image width to 100% and height to auto, opacity to 0.8.  */
 .workcards {
     display: flex;
     flex: 1 0 47.5%;
@@ -146,6 +147,35 @@ article, section ul {
     color: var(--darkgrey);
     border: 5px solid var(--tiffanygreen);
     padding-bottom: 20px;
+    background-color: var(--tiffanygreen);
+    background-size: 100% auto;
+    opacity: 0.8;
+}
+
+.workcards-large {
+    flex: 2 1 100%;
+    height: 400px;
+}
+
+.workcards-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.workcards-links a {
+    text-decoration: none;
+    color: var(--darkgrey);
+    font-size: larger;
+    font-weight: bold;
+}
+
+.workcards-links a:hover {
+    color: #fff;
+}
+
+/* Hovering effect, increase opacity to 1. */
+.workcards:hover {
+    opacity: 1;
 }
 
 /* Background for work portfolio card titles. */
@@ -154,53 +184,15 @@ article, section ul {
     background-color: var(--tiffanygreen);
 }
 
-/* Header for work portfolio card titles. */
-h4 {
-    font-size: 19px;
-}
-
 /* Description for the project. */
 .workcards p {
     margin-top: 10px;
     font-size: 12px;
 }
 
-/* Background image for Surf Report. As well as making the card larger than the rest of the cards. */
-.imgsurf {
-    flex: 2 1 100%;
-    height: 400px;
-    background-image: url("../images/surf.jpg");
-}
-
-/* Background image for LED wall. */
-.imgled {
-    background-image: url("../images/led.jpg");
-}
-
-/* Background image for Calculator. */
-.imgcalc {
-    background-image: url("../images/calc.jpg");
-}
-
-/* Background image for Pastel Puzzles. */
-.imgpuzzle {
-    background-image: url("../images/puzzle.jpg");
-}
-
-/* Background image for Run Buddy. */
-.imgrunbuddy {
-    background-image: url("../images/runbuddy.jpg");
-}
-
-/* Set background image width to 100% and height to auto, opacity to 0.8.  */
-.imgsurf, .imgled, .imgcalc, .imgpuzzle, .imgrunbuddy {
-    background-size: 100% auto;
-    opacity: 0.8;
-}
-
-/* Hovering effect, increase opacity to 1. */
-.imgsurf:hover, .imgled:hover, .imgcalc:hover, .imgpuzzle:hover, .imgrunbuddy:hover {
-    opacity: 1;
+/* Header for work portfolio card titles. */
+h4 {
+    font-size: 19px;
 }
 
 /* List of contact methods */
@@ -302,7 +294,7 @@ footer {
     }
 
     /* Change Surf Report card height to be consistent with others at 175px. */
-    .imgsurf {
+    .workcards-large {
         flex: 1 0 100%;
         height: 175px;
     }
