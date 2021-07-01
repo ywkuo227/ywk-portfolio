@@ -6,19 +6,13 @@ This is Yu-Wei "William" Kuo's portfolio to demonstrate William's journey from z
 ## Screenshot
 ![Screenshot of my portfolio.](assets/images/screenshot.jpeg)
 
-## Credits
+## Deployed Application
+https://ywkuo227.github.io/ywk-portfolio/
 
-Stormy ocean with big wave
-Photo by Kammeran Gonzalez-Keola from Pexels
+## Updates:
+June 30th:
+- Replaced placeholders with actual portfolio work.
+- Added missing links and resume.
 
-Red Lights in Line on Black Surface
-Photo by Pixabay from Pexels
-
-Smartphone with calculator app showing total amount
-Photo by Karolina Grabowska from Pexels
-
-White Jigsaw Puzzle Illustration
-Photo by Pixabay from Pexels
-
-Determined young obese woman with male Asian personal trainer jogging on street
-Photo by Andres Ayrton from Pexels
+May 15th:
+- Initial update with placeholders.
