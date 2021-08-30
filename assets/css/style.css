@@ -152,10 +152,10 @@ article, section ul {
     opacity: 0.8;
 }
 
-.workcards div {
+.work-descriptions {
     display: flex;
     flex-direction: column;
-    align-items: flex-start
+    align-items: flex-start;
 }
 
 .workcards-large {

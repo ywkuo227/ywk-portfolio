@@ -3,7 +3,7 @@ const workSection = $(".work");
 const renderWorks = () => {
     workSection.append(`
     <button class="workcards workcards-large" onclick="window.location.href='${workData[0].appLink}';" style="background-image: url('${workData[0].imgLink}');">
-            <div>
+        <div>
             <h4>${workData[0].title}</h4>
             <p>${workData[0].tech}</p>
             <p class="workcards-links">
@@ -26,7 +26,6 @@ const renderWorks = () => {
         </button>
         `)
     }
-
 }
 
 renderWorks();

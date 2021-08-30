@@ -15,7 +15,7 @@ const workData =
         "repoLink": "https://github.com/ywkuo227/weather-dashboard"
     },
     {
-        "title": "Work Day Scheduler<",
+        "title": "Work Day Scheduler",
         "tech": "JavaScript / jQuery / Moment.js",
         "imgLink": "./assets/images/screenshots/scheduler.jpeg",
         "appLink": "https://ywkuo227.github.io/work-day-scheduler/",
