@@ -140,7 +140,7 @@ article, section ul {
 .workcards {
     display: flex;
     flex: 1 0 47.5%;
-    height: 150px;
+    height: 200px;
     margin: 7.5px;
     text-decoration: none;
     align-items: flex-end;
@@ -152,6 +152,12 @@ article, section ul {
     opacity: 0.8;
 }
 
+.workcards div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
 .workcards-large {
     flex: 2 1 100%;
     height: 400px;
@@ -159,7 +165,7 @@ article, section ul {
 
 .workcards-links {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .workcards-links a {
