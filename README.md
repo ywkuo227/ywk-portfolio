@@ -10,6 +10,11 @@ This is Yu-Wei "William" Kuo's portfolio to demonstrate William's journey from z
 https://ywkuo227.github.io/ywk-portfolio/
 
 ## Updates:
+August 29th:
+- Updated work portfolio.
+- Updated resume.
+- Introduced JS to populate portfolio.
+
 June 30th:
 - Replaced placeholders with actual portfolio work.
 - Added missing links and resume.
