@@ -152,7 +152,7 @@ article, section ul {
     opacity: 0.8;
 }
 
-.work-descriptions {
+.workcard-description {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
