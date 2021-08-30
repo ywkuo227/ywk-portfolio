@@ -22,7 +22,7 @@ const workData =
         "repoLink": "https://github.com/ywkuo227/work-day-scheduler"
     },
     {
-        "title": "Facility Manager",
+        "title": "Facility Management",
         "tech": "Node.js / Express.js / MySQL / MVC / Handlebars",
         "imgLink": "./assets/images/screenshots/fac_mgmt.png",
         "appLink": "https://dn-fac-mgmt.herokuapp.com/",
