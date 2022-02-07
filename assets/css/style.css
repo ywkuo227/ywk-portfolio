@@ -118,14 +118,15 @@ article, section ul {
 
 /* About Me section styles. */
 .aboutme {
-    font-size: 13px;
+    font-size: medium;
     line-height: 1.5;
     margin-bottom: 20px;
 }
 .aboutme img {
-    height: 100px;
+    height: 150px;
     float: left;
     margin: 0 10px 10px 0;
+    border-radius: 6rem;
 }
 
 /* Work section. */
@@ -135,13 +136,30 @@ article, section ul {
     justify-content: space-around;
 }
 
+.workcardwrapper-lg {
+    flex: 2 1 100%;
+    margin: 7.5px;
+}
+
+.workcardwrapper {
+    flex: 1 0 47.5%;
+    margin: 7.5px;
+}
+
+.worksummarywrapper {
+    height: 90px;
+}
+
+.worksummarywrapper p {
+    margin: 7.5px;
+}
+
 /* Work portfolio cards. */
 /* Set background image width to 100% and height to auto, opacity to 0.8.  */
 .workcards {
     display: flex;
-    flex: 1 0 47.5%;
     height: 200px;
-    margin: 7.5px;
+    width: 100%;
     text-decoration: none;
     align-items: flex-end;
     color: var(--darkgrey);
@@ -159,19 +177,18 @@ article, section ul {
 }
 
 .workcards-large {
-    flex: 2 1 100%;
     height: 400px;
 }
 
 .workcards-links {
     display: flex;
-    justify-content: center;
+    justify-content: start;
 }
 
 .workcards-links a {
     text-decoration: none;
-    color: var(--darkgrey);
-    font-size: larger;
+    color: var(--oceanblue);
+    font-size: medium;
     font-weight: bold;
 }
 
@@ -293,9 +310,12 @@ footer {
         padding: 15px 10px 15px 10px;
     }
 
+    .workcardwrapper {
+        flex: 1 0 100%;
+    }
     /* Change all work portfolio card height to 175px. */
     .workcards {
-        flex: 1 0 100%;
+        /* flex: 1 0 100%; */
         height: 175px;
     }
 
